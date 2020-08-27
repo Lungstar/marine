@@ -3,12 +3,12 @@ import 'dart:convert';
 import 'package:marine_life/models/location.dart';
 
 
-UserDetail animalDetailFromJson(String str) {
+UserDetail UserDetailFromJson(String str) {
   final jsonData = json.decode(str);
   return UserDetail.fromMap(jsonData);
 }
 
-String animalDetailToJson(UserDetail data) {
+String UserDetailToJson(UserDetail data) {
   final dyn = data.toMap();
   return json.encode(dyn);
 }
