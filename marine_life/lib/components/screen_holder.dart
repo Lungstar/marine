@@ -39,6 +39,7 @@ class ScreenHolderState extends State<ScreenHolder> {
       return Scaffold(
         backgroundColor: widget.backgroundColor,
         appBar: AppBar(
+          title: Text('Marine Life'),
           automaticallyImplyLeading: false,
         ),
         body: widget.body,

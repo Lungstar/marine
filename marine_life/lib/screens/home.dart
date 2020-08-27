@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:marine_life/components/roundButtonPrimary.dart';
+import 'package:marine_life/screens/animals_details.dart';
 import 'package:sqflite/sqflite.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -31,7 +32,13 @@ class _MyHomePageState extends State<MyHomePage> {
               Padding(
                 padding: EdgeInsets.all(20),
                 child: ButtonPrimary(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                        builder: (context) => AnimalDetails(title: 'Animal',),
+                    ));
+                  },
                   buttonName: '>>',
                 ),
               )

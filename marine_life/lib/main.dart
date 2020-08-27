@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.grey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: AnimalDetails(title: 'Animals'),
+      home: MyHomePage(title: 'Home'),
     );
   }
 }
